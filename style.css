@@ -28,6 +28,10 @@ a:hover{
     border-width: 0 0 5px 2px;
 }
 
+li{
+    margin: 0 20px;
+}
+
 main {
     background-color: #24305E;
     display: flex;
@@ -128,6 +132,33 @@ main {
 #project-3 {
     grid-area: project-3;
     background-color: #F76C6C;
+}
+
+#project1-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'project1-paragraph'
+        'project1-image';
+    grid-gap: 10px;
+    overflow: hidden;
+}
+
+#project1-paragraph {
+    grid-area: project1-paragraph;
+}
+
+#project1-image-container {
+    grid-area: project1-image;
+    border-radius: 30px;
+    max-height: 100%;
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#project1-img {
+    width: 100%;
 }
 
 #project2-grid-container {
